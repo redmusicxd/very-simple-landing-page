@@ -1,4 +1,4 @@
-import { Button, makeStyles, Paper, TextField, useMediaQuery } from "@material-ui/core";
+import { Button, makeStyles, Paper, TextField } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     containerLg: {
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Contact(){
   const classes = useStyles();
-  const matches = useMediaQuery('(min-width:600px)');
+//   const matches = useMediaQuery('(min-width:600px)');
   return(
     <Paper className={classes.content}>
         <form className={classes.form} noValidate autoComplete="off">
