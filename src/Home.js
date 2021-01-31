@@ -36,7 +36,9 @@ export default function Home(){
     return(
     <>
         <Container className={matches ? classes.containerLg : classes.containerSm} elevation={4}>
-            <img src={Logo} alt="Logo" width="200px"/>
+            <Box>
+                <img src={Logo} alt="Logo" width="200px"/>
+            </Box>
             <Box className={classes.buttons}>
                 {/* <ArrowDownwardIcon className={classes.arrowdown}/> */}
                 <Button variant="outlined" component={RouterLink} to="/apps">Apps/Games</Button>

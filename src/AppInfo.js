@@ -39,8 +39,8 @@ export default function AppInfo({history}){
         className={classes.containerLg}
     >
         <Paper className={classes.content}>
-            <IconButton style={{width: "100%", justifyContent: "flex-end"}}onClick={() => history.goBack()}><CloseOutlined/></IconButton>
-            <Box textAlign="center" p={"0 2rem 2rem 2rem"}>
+            <IconButton style={{float: "right"}} onClick={() => history.goBack()}><CloseOutlined/></IconButton>
+            <Box textAlign="center" p={"2rem"}>
                 <img src={AppLogo} width="100px" alt="Clueshare "/>
                 <Typography  variant={matches ? "h2" : "h4"}>Cluedo sheet & share</Typography>
             </Box>
