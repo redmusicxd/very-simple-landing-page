@@ -1,6 +1,5 @@
 import { Button, makeStyles, Paper, TextField } from "@material-ui/core";
 import { useState } from "react";
-import { mailAPI } from './Config';
 
 const useStyles = makeStyles((theme) => ({
     containerLg: {
@@ -47,7 +46,7 @@ export default function Contact(){
 let onSubmit = (ev) => {
   ev.preventDefault();
   console.log(ev);
-  fetch(mailAPI, {
+  fetch(process.env.REACT_APP_mailAPI, {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
