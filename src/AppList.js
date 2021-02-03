@@ -6,7 +6,6 @@ import configFirebase from './Firebase_Config';
 import { FirestoreCollection, FirestoreProvider } from "@react-firebase/firestore";
 import firebase from 'firebase/app';
 import 'firebase/firestore'
-import { Component } from "react";
 
 const useStyles = makeStyles((theme) => ({
     containerLg: {
