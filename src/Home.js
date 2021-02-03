@@ -45,9 +45,9 @@ export default function Home(){
                 <Button variant="outlined" component={RouterLink} to="/contact">Contact</Button>
             </Box>
         </Container>
-        {/* <Box textAlign="right">
+        <Box textAlign="right">
             <a href="https://www.vecteezy.com/free-vector/digital-logo" style={{color: "grey", textDecoration: "none"}}>Digital Logo Vectors by Vecteezy</a>
-        </Box> */}
+        </Box>
     </>
       )
 }
